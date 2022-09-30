@@ -39,6 +39,11 @@
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
     color: #FFFFFF;
+    border-radius: 50px;
+}
+
+.border-radius3{
+    border-radius: 3px;
 }
 
 .btn-square {
@@ -97,7 +102,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
     }
@@ -162,13 +167,17 @@
     font-weight: 900;
     color: var(--primary);
 }
+.work-image{
+    height: 188px;
+    width: 100%;
+}
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -185,8 +194,14 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(44, 44, 44, 0.20), rgba(41, 41, 41, 0.20)), url(../img/carousel-1.jpg) center center no-repeat;
+    /* background: url(../img/carousel-1.jpg) center center no-repeat; */
     background-size: cover;
+}
+
+.banner span {
+    display: block;
+    color: #ffbc00;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -356,6 +371,44 @@
     color: var(--primary);
 }
 
-.banner{
+.banner {
     height: 400px;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.cardMobile {
+    flex: 0 0 auto;
+    width: 270px;
+    margin-right: 15px;
+}
+
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper ::-webkit-scrollbar {
+    display: none;
+}
+
+.MobileOnly--{
+    display: none;
+}
+.WebOnly--{
+    display: block;
+}
+
+/* # Mobile */
+@media (max-width: 480px) {
+    .MobileOnly-- {
+        display: block;
+    }
+    .WebOnly--{
+        display: none;
+    }
 }
