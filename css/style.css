@@ -171,6 +171,18 @@
     height: 188px;
     width: 100%;
 }
+.process-img{
+    height: 405px;
+}
+.offer-text{
+    background-color: #182333;
+}
+.idea-text a{
+    padding-right: 5px;
+}
+.carousel-image{
+    height: 360px;
+}
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
